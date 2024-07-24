@@ -40,6 +40,8 @@ pygmentsCodefencesGuessSyntax = true
 [services]
   [services.disqus]
     shortname = "hugo_test"
+
+    
 #[[Params.bigimg]]
 #  src = "img/triangle.jpg"
 #  desc = "Triangle"
