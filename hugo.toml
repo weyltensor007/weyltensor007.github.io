@@ -1,4 +1,4 @@
-# baseurl = "https://weyltensor007.github.io/"
+baseurl = "https://weyltensor007.github.io"
 DefaultContentLanguage = "en"
 title = "Beautiful Hugo"
 # Using theme as git submodule 
@@ -41,7 +41,7 @@ pygmentsCodefencesGuessSyntax = true
   [services.disqus]
     shortname = "hugo_test"
 
-    
+
 #[[Params.bigimg]]
 #  src = "img/triangle.jpg"
 #  desc = "Triangle"
