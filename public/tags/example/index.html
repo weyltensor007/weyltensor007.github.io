@@ -909,6 +909,28 @@ Number Next number Previous number Five Six Four Ten Eleven Nine Seven Eight Six
 
 
 
+<script type="text/javascript">
+$(function(){
+  $('#show-comments').on('click', function(){
+    var disqus_shortname = 'hugo-test-8';
+      
+    (function() {
+      var disqus = document.createElement('script'); 
+      disqus.type = 'text/javascript'; 
+      disqus.async = true;
+      disqus.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(disqus);
+    })();
+      
+    $(this).hide(); 
+    });
+  });
+      
+</script>
+<script id="dsq-count-scr" src="//hugo-test-8.disqus.com/count.js" async></script>
+
+
+
 
   
 </body>

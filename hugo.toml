@@ -28,7 +28,7 @@ pygmentsCodefencesGuessSyntax = true
   wordCount = true
   useHLJS = true
   socialShare = true
-  delayDisqus = false
+  delayDisqus = true
   showRelatedPosts = true
 
 #  cusdisID = "XXX" # Get your App id from cusdis.com
