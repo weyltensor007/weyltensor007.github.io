@@ -14,6 +14,9 @@ pygmentsCodefencesGuessSyntax = true
 
 #googleAnalytics = "XXX"
 
+
+
+
 [Params]
 #  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
   subtitle = "Build a beautiful and simple website in minutes"
@@ -37,9 +40,6 @@ pygmentsCodefencesGuessSyntax = true
 #  disclaimerText = "The opinions expressed herein are my own personal opinions and do not represent my employer’s view in any way."
 
 
-[services]
-  [services.disqus]
-    shortname = "hugo_test"
 
 
 #[[Params.bigimg]]
