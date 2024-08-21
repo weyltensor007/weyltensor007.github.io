@@ -1,5 +1,51 @@
 baseURL = "https://weyltensor007.github.io/"
 languageCode = 'en-us'
-title = "MathDeriver"
+title = "數學學思錄"
 theme = 'beautifulhugo'
+pygmentsStyle = "monokai"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
 
+
+[Params]
+  mainSections = ["posts"] # 設置那些 content 下的 folder 要被渲染
+  subtitle = "留下詳盡的推導"
+  rss = true
+  hideAuthor = true
+  comment = true
+  defaultMode = "dark"
+  showRelatedPosts = true # 要設為 true 才會在 tags/categories/series 頁面出現
+
+#[services]
+#  [services.disqus]
+#    shortname = 'hugo-test-8'
+
+[Params.author]
+  email = "weyltensor@gmail.com"
+
+[taxonomies]
+  category = 'categories'
+  series = 'series'
+  tag = 'tags'
+
+[[menu.main]]
+    name = "About"
+    url = "page/about/"
+    weight = 1
+
+
+[[menu.main]]
+    name = "Tags"
+    url = "tags"
+    weight = 1
+
+[[menu.main]]
+    name = "Categories"
+    url = "categories"
+    weight = 2
+
+[[menu.main]]
+    name = "Series"
+    url = "series"
+    weight = 3
