@@ -12,3 +12,31 @@ Hello, this is some code block
 ```python
 print("hello world!")
 ```
+
+
+```mermaid
+stateDiagram
+    direction LR
+    [*] --> A
+    A --> B
+    B --> C
+    state B {
+      direction LR
+      a --> b
+    }
+    B --> D
+```
+
+
+```mermaid
+---
+title: Centered Mermaid Diagram
+config:
+  theme: dark
+  flowchart:
+    curve: linear
+---
+flowchart
+    A --> B
+    B --> C
+```
