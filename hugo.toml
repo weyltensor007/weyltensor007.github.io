@@ -13,13 +13,14 @@ pygmentsCodefencesGuessSyntax = true
   subtitle = "留下詳盡的推導"
   rss = true
   hideAuthor = true
-  comment = true
+  comments = true
   defaultMode = "dark"
   showRelatedPosts = true # 要設為 true 才會在 tags/categories/series 頁面出現
+  delayDisqus = true
 
-#[services]
-#  [services.disqus]
-#    shortname = 'hugo-test-8'
+[services]
+  [services.disqus]
+    shortname = 'github-io-tmqetc1x7e' # 要進去 disqus 平台查 shortname
 
 [Params.author]
   email = "weyltensor@gmail.com"
@@ -49,3 +50,4 @@ pygmentsCodefencesGuessSyntax = true
     name = "Series"
     url = "series"
     weight = 3
+
