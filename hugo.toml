@@ -10,7 +10,7 @@ pygmentsCodefencesGuessSyntax = true
 
 [Params]
   mainSections = ["posts"] # 設置那些 content 下的 folder 要被渲染
-  subtitle = "留下詳盡的推導"
+  subtitle = "試著留下詳盡的推導吧!"
   rss = true
   hideAuthor = true
   comments = true
