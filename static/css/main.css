@@ -1157,3 +1157,24 @@ ul.share li:hover .fab {
   overflow-x: auto;
   overflow-y: hidden;
 }
+
+/* taxonomies 水平線 */
+hr.taxonomies {
+  border: none;
+  border-top: 3px double #ffffff;
+  color: #000000;
+  overflow: visible;
+  text-align: center;
+  height: 10px;
+}
+
+hr.taxonomies::after {
+  background: #fff;
+  content: 'TAXONOMIES';
+  padding: 0 4px;
+  font-size: 15px;
+  font-family: Papyrus;
+  font-weight: bold;
+  position: relative;
+  top: -13px;
+}

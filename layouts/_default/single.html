@@ -5,13 +5,18 @@
       <article role="main" class="blog-post">
         {{ .Content }}
 
+        {{ if or .Params.tags .Params.categories .Params.series}}
+        <!-- prevent <hr> appearing in aboutme.md -->
+        <hr class="taxonomies">
+        </hr>
+        {{ end }}
         {{ if .Params.tags }}
         <div class="blog-tags">
           {{ range .Params.tags }}
           <!-- Fix for "https://github.com/halogenica/beautifulhugo/issues/349".
-              Inspired by "https://github.com/dovidio/personalwebsite/commit/34762e94c29fd2c26c16c45f8ae2de21bdf9b46d".
-              <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/">{{ . }}</a>&nbsp;
-              -->
+          Inspired by "https://github.com/dovidio/personalwebsite/commit/34762e94c29fd2c26c16c45f8ae2de21bdf9b46d".
+          <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/">{{ . }}</a>&nbsp;
+          -->
           <a href='{{ "tags" | absLangURL }}/{{ . | urlize }}/'>{{ . }}</a>&nbsp;
           {{ end }}
         </div>
@@ -21,9 +26,9 @@
         <div class="blog-categories">
           {{ range .Params.categories }}
           <!-- Fix for "https://github.com/halogenica/beautifulhugo/issues/349".
-              Inspired by "https://github.com/dovidio/personalwebsite/commit/34762e94c29fd2c26c16c45f8ae2de21bdf9b46d".
-              <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/">{{ . }}</a>&nbsp;
-              -->
+          Inspired by "https://github.com/dovidio/personalwebsite/commit/34762e94c29fd2c26c16c45f8ae2de21bdf9b46d".
+          <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/">{{ . }}</a>&nbsp;
+          -->
           <a href='{{ "categories" | absLangURL }}/{{ . | urlize }}/'>{{ . }}</a>&nbsp;
           {{ end }}
         </div>
@@ -33,9 +38,9 @@
         <div class="blog-series">
           {{ range .Params.series }}
           <!-- Fix for "https://github.com/halogenica/beautifulhugo/issues/349".
-              Inspired by "https://github.com/dovidio/personalwebsite/commit/34762e94c29fd2c26c16c45f8ae2de21bdf9b46d".
-              <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/">{{ . }}</a>&nbsp;
-              -->
+          Inspired by "https://github.com/dovidio/personalwebsite/commit/34762e94c29fd2c26c16c45f8ae2de21bdf9b46d".
+          <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/">{{ . }}</a>&nbsp;
+          -->
           <a href='{{ "series" | absLangURL }}/{{ . | urlize }}/'>{{ . }}</a>&nbsp;
           {{ end }}
         </div>
