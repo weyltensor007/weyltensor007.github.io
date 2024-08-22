@@ -1178,3 +1178,9 @@ hr.taxonomies::after {
   position: relative;
   top: -13px;
 }
+
+
+/* 螢光筆(<mark>) */
+mark {
+  background: #f1f505;
+}

@@ -51,3 +51,7 @@ pygmentsCodefencesGuessSyntax = true
     url = "series"
     weight = 3
 
+
+# 需要這段才能正常渲染 <mark> tag
+[markup.goldmark.renderer]
+  unsafe = true

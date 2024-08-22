@@ -49,4 +49,71 @@ categories = ["Blog"]
 hugo new site MyBlog
 ```
 
-這個命令會在當前資料夾下創建一個 `MyBlog` 的資料夾
+這個命令會在當前資料夾下創建一個 `MyBlog` 的資料夾，該資料夾即包含架站所需的所有檔案。
+
+## 下載並指定主題(theme)
+
+```
+cd MyBlog
+
+git init
+
+git submodule add https://github.com/halogenica/beautifulhugo.git themes/beautifulhugo
+```
+
+我選用 beautifulhugo 主題；另外值得注意的是，下載主題也可以用 `hugo module` 的方式，只不過需要安裝 `Go`，為了不安裝多於的程式，這裡使用 `git submodule` 就好。
+
+剛剛僅下載了主體，如果要指定主題，需要修改設定檔 `hugo.toml`，即：
+
+```toml
+theme = 'beautifulhugo'
+```
+
+## 關於 Latex
+
+`Hugo` 官方文件有提及 Latex 的[設定方式](https://gohugo.io/content-management/mathematics/)，但我選用的 beautifulhugo 主題原生就有支援 Latex，因此不需該微調。
+
+只不過在輸入時有幾點要注意：
+
+1. Inline mode 使用 `\\(` 和 `\\)` 包覆
+
+```
+This is an inline equation, \\(E=mc^2\\)
+```
+
+會被解釋為
+
+This is an inline equation, \\(E=mc^2\\)
+
+2. Block mode 使用 `$$` 包覆
+
+```
+$$
+\sin(x+y) = \sin(x)\cos(y)+\sin(y)\cos(x)
+$$
+```
+
+會被解釋為
+
+$$
+\sin(x+y) = \sin(x)\cos(y)+\sin(y)\cos(x)
+$$
+
+3. 如果需要在 Latex 換行，則需使用 `\\\\`
+
+```
+$$
+\begin{bmatrix}
+1 & 2 & 3 \\\\
+4 & 5 & 6
+\end{bmatrix}
+$$
+```
+
+$$
+\begin{bmatrix}
+1 & 2 & 3 \\\\
+4 & 5 & 6
+\end{bmatrix}
+$$
+
