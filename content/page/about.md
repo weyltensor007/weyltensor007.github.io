@@ -20,4 +20,5 @@ To Thales the primary question was not “What do we know?”, but “How do we 
 
 但有時候自己的思路未必會湊巧地和廣大讀者吻合，倘若有讀者覺得哪個地方不夠清楚、不夠直觀，或者有更有趣的觀點，非常歡迎留言分享討論。
 
+也可以透過 email 來交流: weyltensor@gmail.com
 
