@@ -3,7 +3,12 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
+
+        <!-- Table of Contents  用 if 判斷避免 quotes.html 被插入 toc-->
+        {{ $toc := default true .Params.toc }}
+        {{ if $toc }}
         {{ .TableOfContents }}
+        {{ end }}
 
         {{ .Content }}
 

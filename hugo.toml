@@ -35,21 +35,26 @@ pygmentsCodefencesGuessSyntax = true
     url = "page/about/"
     weight = 1
 
+[[menu.main]]
+    name = "Quotes"
+    url = "page/quotes/"
+    weight = 2
+
 
 [[menu.main]]
     name = "Tags"
     url = "tags"
-    weight = 1
+    weight = 3
 
 [[menu.main]]
     name = "Categories"
     url = "categories"
-    weight = 2
+    weight = 4
 
 [[menu.main]]
     name = "Series"
     url = "series"
-    weight = 3
+    weight = 5
 
 
 # 需要這段才能正常渲染 <mark> tag
