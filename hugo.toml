@@ -55,3 +55,10 @@ pygmentsCodefencesGuessSyntax = true
 # 需要這段才能正常渲染 <mark> tag
 [markup.goldmark.renderer]
   unsafe = true
+
+# TOC 顯示階層設定
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false # ordered 代表用數字編號
+    startLevel = 1
